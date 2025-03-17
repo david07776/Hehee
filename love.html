@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="love.css">
-    <title>Mahii</title>
+    <title>VanishingIntoLove | Aoudumber Bade</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -14,29 +14,29 @@
             
             <div class="boxHands">
                 <div class="handsCat">
-                    <img src="handsCat.png" alt="">
+                    <img src="../image/handsCat.png" alt="">
                 </div>
                 <h1>Welcome</h1>
             </div>
             <div class="boxSlider">
                     <div class="listSlider">
                         <div class="slider">
-                            <img src="love1.jpg" alt="">
+                            <img src="../image/love1.jfif" alt="">
                         </div>
                         <div class="slider">
-                            <img src="love2.png" alt="">
+                            <img src="../image/love2.png" alt="">
                         </div>
                         <div class="slider">
-                            <img src="r.png" alt="">
+                            <img src="../image/r.png" alt="">
                         </div>
                         <div class="slider">
-                            <img src="r1.png" alt="">
+                            <img src="../image/r1.png" alt="">
                         </div>
                         <div class="slider">
-                            <img src="r5.png" alt="">
+                            <img src="../image/r5.png" alt="">
                         </div>
                         <div class="slider">
-                            <img src="mahiii.jpg" alt="">
+                            <img src="../image/rashiii.jpg" alt="">
                         </div>
                     </div>
                 <div class="left">
@@ -48,7 +48,7 @@
             </div>
             <div class="boxHandsInput">
                 <div class="handsCatImgInput">
-                    <img src="handsCat.png" alt="">
+                    <img src="../image/handsCat.png" alt="">
                 </div>
                 <input type="text" id="inputField" placeholder="Enter name..." readonly>
             </div>
@@ -59,7 +59,7 @@
         </div>
         <div class="boxLine">
             <div class="boxCar">
-                <img src="car.gif" alt="">
+                <img src="../image/car.gif" alt="">
             </div>
             <div class="boxHeart">
                 <div class="heart1"></div>
@@ -104,19 +104,23 @@
                 </div>
                 
                 <div class="wrapperLetter">
-                    
+                    <div class="giftbox">
+                        <div class="img">
+                            <img src="../image/giftbox.png" alt="">
+                        </div>
+                    </div>
                     <div class="textLetter">
                         <h2></h2>
                         <p class="contentLetter"></p>
                         <div class="heartAnimation">
-                            <img src="heartAnimation.gif" alt="">
+                            <img src="../image/heartAnimation.gif" alt="">
                         </div>
                     </div>
                     <div class="mewmew1">
-                        <img src="mewmew.gif" alt="">
+                        <img src="../image/mewmew.gif" alt="">
                     </div>
                     <div class="mewmew2">
-                        <img src="mewmew.gif" alt="">
+                        <img src="../image/mewmew.gif" alt="">
                     </div>
                 </div>
             </div>
@@ -126,7 +130,7 @@
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <script>
-    $(wndow).on('load', function(event){
+    $(window).on('load', function(event){
     $('body').removeClass('preloading');
     $('.loadingLove').delay(1000).fadeOut('fast');
 
@@ -179,7 +183,7 @@
     }
 
     const inputField = document.getElementById('inputField');
-    const textToType = "Bina bangs ke sunder lgne wali💗";
+    const textToType = "Rashmiiiii i love you 💗";
     const typingSpeed = 100; // milliseconds per character
 
     let charIndex = 0;
@@ -251,7 +255,7 @@
     // chữ của thư bạn muốn gửi
     let indexTextContent = 0;
     let textLetterContent = document.querySelector('.contentLetter');
-    const textLetterP = <c>"A week has 7 days. A day has 24 hours. An hour has 60 minutes. A minute has 60 seconds. There is not a day or hour that I do not miss you. There is no moment that I do not think of you.(Chatgpt se copy kiya hai).";<c>
+    const textLetterP = "A week has 7 days. A day has 24 hours. An hour has 60 minutes. A minute has 60 seconds. There is not a day or hour that I do not miss you. There is no moment that I do not think of you. My soul and heart are filled with you. Miss and love you very much.";
     let timoutTextLetterContent;
     function textCharLetterContent(){
         if (indexTextContent < textLetterP.length) {
@@ -286,7 +290,7 @@
         let timeout = setInterval(()=>{
             var letters = document.createElement("div");
             letters.className = "letters"
-            letters.innerHTML = '<img src="letters.png" alt="">';
+            letters.innerHTML = '<img src="../image/letters.png" alt="">';
             document.querySelector("body").prepend(letters)
             let left = Math.floor(Math.random() * 100);
             let rotate = Math.floor(Math.random() * 360);
